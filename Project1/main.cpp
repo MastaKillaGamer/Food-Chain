@@ -242,21 +242,21 @@ int killCreature(int c,int i)
 	{
 		int x = plantId[i].x;
 		int y = plantId[i].y;
-		plantId.erase(plantId.begin() + (i - 1));
+		//plantId.erase(plantId.begin() + (i - 1));
 		plants--;
 	};
 	if (c == 2)
 	{
 		int x = herbivoreId[i].x;
 		int y = herbivoreId[i].y;
-		herbivoreId.erase(herbivoreId.begin() + (i - 1));
+		//herbivoreId.erase(herbivoreId.begin() + (i - 1));
 		herbivores--;
 	};
 	if (c == 3)
 	{
 		int x = carnivoreId[i].x;
 		int y = carnivoreId[i].y;
-		carnivoreId.erase(carnivoreId.begin() + (i - 1));
+		//carnivoreId.erase(carnivoreId.begin() + (i - 1));
 		carnivores--;
 	};
 	return 1;
@@ -269,7 +269,7 @@ int dieCreature(int c, int i)
 		int x = plantId[i].x;
 		int y = plantId[i].y;
 		grid[x][y] = 0;
-		plantId.erase(plantId.begin() + (i - 1));
+		//plantId.erase(plantId.begin() + (i - 1));
 		plants--;
 	};
 	if (c == 2)
@@ -277,7 +277,7 @@ int dieCreature(int c, int i)
 		int x = herbivoreId[i].x;
 		int y = herbivoreId[i].y;
 		grid[x][y] = 0;
-		herbivoreId.erase(herbivoreId.begin() + (i - 1));
+		//herbivoreId.erase(herbivoreId.begin() + (i - 1));
 		herbivores--;
 	};
 	if (c == 3)
@@ -285,7 +285,7 @@ int dieCreature(int c, int i)
 		int x = carnivoreId[i].x;
 		int y = carnivoreId[i].y;
 		grid[x][y] = 0;
-		carnivoreId.erase(carnivoreId.begin() + (i - 1));
+		//carnivoreId.erase(carnivoreId.begin() + (i - 1));
 		carnivores--;
 	};
 	return 1;
@@ -449,7 +449,6 @@ int lookAround(int c, int i)
 			for (int gy = -1; !(gy = 2); gy++)
 			{
 				//Reproduction
-				std::cout << "gx: " << gx << std::endl;
 				if ((grid[x - gx][y - gy] = 0) && (carnivoreId[i].birth = 100))
 				{
 					createCreature(x - gx, y - gy, 3);
@@ -457,7 +456,6 @@ int lookAround(int c, int i)
 					return 1;
 				}
 				//Eating
-				std::cout << "gy: " << gy << std::endl;
 				if ((grid[x + gx][y + gy] = 2) && (carnivoreId[i].hunger <= 80))
 				{
 					grid[carnivoreId[i].x][carnivoreId[i].y] = 0;
@@ -482,7 +480,7 @@ int turn()
 {
 	for (int i = 0; i < carnivores; i++)
 	{
-		if (!(grid[carnivoreId[i].x][carnivoreId[i].x] = 3))dieCreature(3, i);
+		if ((grid[carnivoreId[i].x][carnivoreId[i].x] = 1) || (grid[carnivoreId[i].x][carnivoreId[i].x] = 2) || (grid[carnivoreId[i].x][carnivoreId[i].x] = 0));dieCreature(3, i);
 		if (carnivoreId[i].hunger <= 0) killCreature(3, i);
 		lookAround(3, i);
 	
@@ -490,14 +488,14 @@ int turn()
 	};
 	for (int i = 0; i < herbivores; i++)
 	{
-		if (!(grid[herbivoreId[i].x][herbivoreId[i].x] = 2))dieCreature(2, i);
+		if ((grid[carnivoreId[i].x][carnivoreId[i].x] = 0) || (grid[carnivoreId[i].x][carnivoreId[i].x] = 3) || (grid[carnivoreId[i].x][carnivoreId[i].x] = 1))dieCreature(2, i);
 		if (herbivoreId[i].hunger <= 0) killCreature(2, i);
 		lookAround(2, i);
 
 	};
 	for (int i = 0; i < plants; i++)
 	{
-		if (!(grid[plantId[i].x][plantId[i].x] = 3))dieCreature(1, i);
+		if ((grid[carnivoreId[i].x][carnivoreId[i].x] = 3) || (grid[carnivoreId[i].x][carnivoreId[i].x] = 2) || (grid[carnivoreId[i].x][carnivoreId[i].x] = 0))dieCreature(1, i);
 		lookAround(1, i);
 
 	};
