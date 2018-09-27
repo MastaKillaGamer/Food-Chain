@@ -1,0 +1,40 @@
+﻿1>------ Build started: Project: Project1, Configuration: Debug x64 ------
+1>main.cpp
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(12): error C2374: 'SCREEN_WIDTH': redefinition; multiple initialization
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(12): note: see declaration of 'SCREEN_WIDTH'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(13): error C2374: 'SCREEN_HEIGHT': redefinition; multiple initialization
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(13): note: see declaration of 'SCREEN_HEIGHT'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(14): error C2374: 'GRID_SIZE': redefinition; multiple initialization
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(14): note: see declaration of 'GRID_SIZE'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(15): error C2374: 'GRID_TOTAL': redefinition; multiple initialization
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(15): note: see declaration of 'GRID_TOTAL'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(16): error C2369: 'grid': redefinition; different subscripts
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(16): note: see declaration of 'grid'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(17): error C2086: 'std::ifstream inFile': redefinition
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(17): note: see declaration of 'inFile'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(32): error C2374: 'gWindow': redefinition; multiple initialization
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(32): note: see declaration of 'gWindow'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(35): error C2374: 'gRenderer': redefinition; multiple initialization
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(35): note: see declaration of 'gRenderer'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(38): error C2084: function 'bool init(void)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(37): note: see previous definition of 'init'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(92): error C2084: function 'bool loadMedia(void)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(91): note: see previous definition of 'loadMedia'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(101): error C2084: function 'void close(void)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(100): note: see previous definition of 'close'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(114): error C2084: function 'SDL_Texture *loadTexture(std::string)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(113): note: see previous definition of 'loadTexture'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(141): error C2084: function 'int initGrid(void)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(140): note: see previous definition of 'initGrid'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(160): error C2084: function 'int drawCube(int,int)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(159): note: see previous definition of 'drawCube'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(171): error C2084: function 'int gameDraw(void)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(170): note: see previous definition of 'gameDraw'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(184): error C2084: function 'int gameLogic(void)' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(183): note: see previous definition of 'gameLogic'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(196): error C2084: function 'int SDL_main(int,char *[])' already has a body
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(195): note: see previous definition of 'SDL_main'
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(198): warning C4551: function call missing argument list
+1>c:\users\kaleb\source\repos\project1\project1\main.cpp(205): warning C4551: function call missing argument list
+1>Done building project "Project1.vcxproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========

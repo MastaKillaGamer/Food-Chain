@@ -1,0 +1,25 @@
+﻿The thread 0x2034 has exited with code 0 (0x0).
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\WinTypes.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\ResourcePolicyClient.dll'
+The thread 0x31c8 has exited with code 0 (0x0).
+The thread 0x4e1c has exited with code 0 (0x0).
+The thread 0x4f74 has exited with code 0 (0x0).
+The thread 0x4c24 has exited with code 0 (0x0).
+The thread 0x25f0 has exited with code 0 (0x0).
+The thread 0x26cc has exited with code 0 (0x0).
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\amdihk64.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\DriverStore\FileRepository\c0333148.inf_amd64_6714569004b0131a\B333163\atiumd6t.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\DriverStore\FileRepository\c0333148.inf_amd64_6714569004b0131a\B333163\atiumd6a.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\DriverStore\FileRepository\c0333148.inf_amd64_6714569004b0131a\B333163\atiumd64.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\DriverStore\FileRepository\c0333148.inf_amd64_6714569004b0131a\B333163\atiu9p64.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\DriverStore\FileRepository\c0333148.inf_amd64_6714569004b0131a\B333163\aticfx64.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Windows\System32\d3d9.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Users\Kaleb\source\repos\Project1\Project1\zlib1.dll'
+'Project1.exe' (Win32): Unloaded 'C:\Users\Kaleb\source\repos\Project1\Project1\libpng16-16.dll'
+The thread 0x2c84 has exited with code 0 (0x0).
+The thread 0x4e00 has exited with code 0 (0x0).
+The thread 0x34f4 has exited with code 0 (0x0).
+The thread 0x4154 has exited with code 0 (0x0).
+The thread 0x1990 has exited with code 0 (0x0).
+The thread 0x844 has exited with code 0 (0x0).
+The program '[13704] Project1.exe' has exited with code 0 (0x0).
